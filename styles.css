@@ -1,3 +1,75 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities'
+h1 {
+    font-size: 2.25rem;
+        /* Equivalent to text-4xl in Tailwind */
+        color: #1E40AF;
+        /* Equivalent to text-blue-500 in Tailwind */
+        text-align: center;
+        /* Equivalent to text-center in Tailwind */
+        padding-bottom: 1.5rem;
+}
+
+nav {
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 1.25rem;
+        /* Equivalent to px-10 in Tailwind */
+        padding-right: 1.25rem;
+        /* Equivalent to px-10 in Tailwind */
+        background-color: #FFFFFF;
+        /* Equivalent to bg-white in Tailwind */
+        position: fixed;
+        width: 80%;
+        /* Equivalent to w-4/5 in Tailwind */
+        height: 7rem;
+        /* Equivalent to h-28 in Tailwind */
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        /* Equivalent to hover:shadow-lg in Tailwind */
+}
+
+.myHeader {
+    width: 100%;
+        /* Equivalent to w-full in Tailwind */
+        height: 7rem;
+        /* Equivalent to h-28 in Tailwind */
+        display: flex;
+        justify-content: center;
+        background-color: #EBF4FF;
+}
+
+ul {
+    display: flex;
+    gap: 1.75rem;
+}
+
+li:hover {
+    color: #3B82F6;
+}
+
+.my-hover-height {
+    height: 6rem;
+    /* Equivalent to h-24 in Tailwind */
+}
+
+.my-hover-height:hover {
+    height: 7rem;
+    /* Equivalent to hover:h-28 in Tailwind */
+}
+
+/* Regular CSS */
+.my-flex-container {
+    display: flex;
+    flex-direction: column;
+    /* Equivalent to flex-col in Tailwind */
+    gap: 1.25rem;
+    /* Equivalent to gap-5 in Tailwind (5 multiplied by the default font size) */
+    align-items: center;
+    /* Equivalent to items-center in Tailwind */
+}
+
+.my-background-container {
+    background-color: #EBF4FF;
+    /* Equivalent to bg-blue-100 in Tailwind */
+    padding: 2.5rem;
+    /* Equivalent to p-10 in Tailwind */
+}
